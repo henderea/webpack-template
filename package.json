@@ -1,14 +1,14 @@
 {
-  "name": "real-time-transcripts-5",
+  "name": "webpack-template",
   "version": "1.0.0",
-  "description": "A demo of a possible real time transcripts interface",
+  "description": "A webpack template by henderea",
   "main": "",
   "scripts": {
     "build": "webpack"
   },
-  "author": "ehenderson",
+  "author": "henderea",
   "license": "ISC",
-  "repository": "https://github.com/henderea/real-time-transcripts-5",
+  "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
