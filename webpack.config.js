@@ -21,7 +21,7 @@ var plugins = [
       // https://github.com/facebookincubator/create-react-app/issues/2488
       ascii_only: true,
     },
-    sourceMap: false,
+    sourceMap: true,
   }),
   new HtmlWebpackPlugin({
     filename: 'index.html',
@@ -40,6 +40,7 @@ module.exports = {
     filename: '[name].[chunkhash:8].js',
     path: path.resolve(__dirname, './dist')
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
