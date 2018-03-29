@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@henderea/static-site-builder@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.10.tgz#70b32d7f60bd4fee651eeae25ec6d49b0f67437b"
+"@henderea/static-site-builder@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.11.tgz#b269ab54d1e15b107fe6262b4b3f99de72fe30a2"
   dependencies:
     babel-core "^6.26.0"
     babel-loader "^7.1.4"
@@ -12,24 +12,24 @@
     chalk "^2.3.2"
     cross-spawn "^6.0.5"
     css-loader "^0.28.11"
-    ejs "^2.5.7"
-    eslint "^4.18.2"
+    ejs "^2.5.8"
+    eslint "^4.19.1"
     file-loader "^1.1.11"
-    filesize "^3.6.0"
-    find-pkg "^1.0.0"
+    filesize "^3.6.1"
+    find-pkg "^2.0.0"
     globby "^8.0.1"
     gzip-size "^4.1.0"
     handlebars "^4.0.11"
-    html-webpack-plugin "^3.0.6"
-    mini-css-extract-plugin "^0.2.0"
-    node-sass "^4.7.2"
+    html-webpack-plugin "^3.1.0"
+    mini-css-extract-plugin "^0.3.0"
+    node-sass "^4.8.3"
     recursive-readdir "^2.2.2"
     sass-loader "^6.0.7"
     strip-ansi "^4.0.0"
     style-loader "^0.20.3"
     sw-precache-webpack-plugin "^0.11.5"
     thread-loader "^1.1.5"
-    webpack "^4.1.1"
+    webpack "^4.4.0"
     webpack-manifest-plugin "^2.0.0-rc.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
@@ -1387,7 +1387,7 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-ejs@^2.5.7:
+ejs@^2.5.8:
   version "2.5.8"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.8.tgz#2ab6954619f225e6193b7ac5f7c39c48fefe4380"
 
@@ -1478,7 +1478,7 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^4.18.2, eslint@^4.19.1:
+eslint@^4.19.1:
   version "4.19.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.19.1.tgz#32d1d653e1d90408854bfb296f076ec7e186a300"
   dependencies:
@@ -1689,7 +1689,7 @@ file-loader@^1.1.11:
     loader-utils "^1.0.2"
     schema-utils "^0.4.5"
 
-filesize@^3.6.0:
+filesize@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.6.1.tgz#090bb3ee01b6f801a8a8be99d31710b3422bb317"
 
@@ -1710,17 +1710,17 @@ find-cache-dir@^1.0.0:
     make-dir "^1.0.0"
     pkg-dir "^2.0.0"
 
-find-file-up@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/find-file-up/-/find-file-up-1.0.2.tgz#4d53664bc128cf793901497f4b13558d979755ca"
+find-file-up@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/find-file-up/-/find-file-up-2.0.1.tgz#4932dd81551af643893f8cda7453f221e3e28261"
   dependencies:
-    resolve-dir "^1.0.0"
+    resolve-dir "^1.0.1"
 
-find-pkg@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/find-pkg/-/find-pkg-1.0.0.tgz#96db242e001c7c55025d32213302ea3aba677177"
+find-pkg@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/find-pkg/-/find-pkg-2.0.0.tgz#3a7c35c704e11a6e5722c56e45bd7e587507735e"
   dependencies:
-    find-file-up "^1.0.2"
+    find-file-up "^2.0.1"
 
 find-up@^1.0.0:
   version "1.1.2"
@@ -2228,7 +2228,7 @@ html-minifier@^3.2.3:
     relateurl "0.2.x"
     uglify-js "3.3.x"
 
-html-webpack-plugin@^3.0.6:
+html-webpack-plugin@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.1.0.tgz#6e02baaedb1e906310917f03239c793a75af2885"
   dependencies:
@@ -3001,9 +3001,9 @@ mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
 
-mini-css-extract-plugin@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.2.0.tgz#7a16b0e1096c86de8e4d1c3b063aa1aeae88d41d"
+mini-css-extract-plugin@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.3.0.tgz#f8dc03abb3a8663f1a431143e232fb47fb4d9318"
   dependencies:
     loader-utils "^1.1.0"
     webpack-sources "^1.1.0"
@@ -3195,7 +3195,7 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-sass@^4.7.2:
+node-sass@^4.8.3:
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.8.3.tgz#d077cc20a08ac06f661ca44fb6f19cd2ed41debb"
   dependencies:
@@ -4189,7 +4189,7 @@ require-uncached@^1.0.3:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
-resolve-dir@^1.0.0:
+resolve-dir@^1.0.0, resolve-dir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/resolve-dir/-/resolve-dir-1.0.1.tgz#79a40644c362be82f26effe739c9bb5382046f43"
   dependencies:
@@ -5097,7 +5097,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.1.1:
+webpack@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.4.0.tgz#9439e523544034bc28401c72155b28627c3af384"
   dependencies:
