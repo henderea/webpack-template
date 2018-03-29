@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@henderea/static-site-builder@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.11.tgz#b269ab54d1e15b107fe6262b4b3f99de72fe30a2"
+"@henderea/static-site-builder@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.12.tgz#b5f282431eb918cc51685fcc2561d66dd3a7a13d"
   dependencies:
     babel-core "^6.26.0"
     babel-loader "^7.1.4"
@@ -21,7 +21,7 @@
     gzip-size "^4.1.0"
     handlebars "^4.0.11"
     html-webpack-plugin "^3.1.0"
-    mini-css-extract-plugin "^0.3.0"
+    mini-css-extract-plugin "^0.4.0"
     node-sass "^4.8.3"
     recursive-readdir "^2.2.2"
     sass-loader "^6.0.7"
@@ -29,7 +29,7 @@
     style-loader "^0.20.3"
     sw-precache-webpack-plugin "^0.11.5"
     thread-loader "^1.1.5"
-    webpack "^4.4.0"
+    webpack "^4.4.1"
     webpack-manifest-plugin "^2.0.0-rc.2"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
@@ -3001,9 +3001,9 @@ mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
 
-mini-css-extract-plugin@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.3.0.tgz#f8dc03abb3a8663f1a431143e232fb47fb4d9318"
+mini-css-extract-plugin@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.0.tgz#ff3bf08bee96e618e177c16ca6131bfecef707f9"
   dependencies:
     loader-utils "^1.1.0"
     webpack-sources "^1.1.0"
@@ -5097,9 +5097,9 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.4.0.tgz#9439e523544034bc28401c72155b28627c3af384"
+webpack@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.4.1.tgz#b0105789890c28bfce9f392623ef5850254328a4"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^3.0.0"
