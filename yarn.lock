@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@henderea/static-site-builder@^1.0.14":
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.14.tgz#7b8ce628c5689173397bc9593f05fe785c5d6666"
+"@henderea/static-site-builder@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.15.tgz#6de0335b69329c07042da9250ea16374f2dbe1a5"
   dependencies:
     babel-core "^6.26.0"
     babel-loader "^7.1.4"
@@ -24,7 +24,7 @@
     mini-css-extract-plugin "^0.4.0"
     node-sass "^4.8.3"
     recursive-readdir "^2.2.2"
-    sass-loader "^6.0.7"
+    sass-loader "^7.0.0"
     strip-ansi "^4.0.0"
     style-loader "^0.20.3"
     sw-precache-webpack-plugin "^0.11.5"
@@ -4273,9 +4273,9 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@^6.0.7:
-  version "6.0.7"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-6.0.7.tgz#dd2fdb3e7eeff4a53f35ba6ac408715488353d00"
+sass-loader@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-7.0.0.tgz#bdc9653eaf569f0ce77ac01efcaa0b92ca5e0571"
   dependencies:
     clone-deep "^2.0.1"
     loader-utils "^1.0.1"
