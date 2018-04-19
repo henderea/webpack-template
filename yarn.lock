@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@henderea/static-site-builder@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.18.tgz#91a8359ed2241b074789bb7689de24c5b515fbff"
+"@henderea/static-site-builder@^1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.20.tgz#02568397e43b7f112791744cc2c90a076557fa38"
   dependencies:
     babel-core "^6.26.0"
     babel-loader "^7.1.4"
