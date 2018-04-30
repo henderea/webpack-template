@@ -11,12 +11,12 @@
   "license": "ISC",
   "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
-    "@henderea/static-site-builder": "^1.0.20",
+    "@henderea/static-site-builder": "^1.0.21",
     "eslint": "^4.19.1"
   },
   "dependencies": {
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
-    "lodash": "^4.17.5"
+    "lodash": "^4.17.10"
   }
 }
