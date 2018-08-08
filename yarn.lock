@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@henderea/static-site-builder@^1.0.41":
-  version "1.0.41"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.41.tgz#156eac1d64290ac7e799fadf5f6ca8c896bf7348"
+"@henderea/static-site-builder@^1.0.42":
+  version "1.0.42"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.0.42.tgz#349b0d5ceff2f4af3c810c3ab6737fb7f594683a"
   dependencies:
     babel-core "^6.26.3"
     babel-loader "^7.1.5"
@@ -26,7 +26,7 @@
     recursive-readdir "^2.2.2"
     sass-loader "^7.1.0"
     strip-ansi "^4.0.0"
-    style-loader "^0.21.0"
+    style-loader "^0.22.0"
     sw-precache-webpack-plugin "^0.11.5"
     thread-loader "^1.2.0"
     webpack "^4.16.5"
@@ -4007,8 +4007,8 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
 schema-utils@^0.4.4, schema-utils@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.5.tgz#21836f0608aac17b78f9e3e24daff14a5ca13a3e"
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.7.tgz#ba74f597d2be2ea880131746ee17d0a093c68187"
   dependencies:
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
@@ -4347,9 +4347,9 @@ strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-style-loader@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.21.0.tgz#68c52e5eb2afc9ca92b6274be277ee59aea3a852"
+style-loader@^0.22.0:
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.22.1.tgz#901ea28aac78fcc00c5075585ac07d7ef3f87a52"
   dependencies:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
