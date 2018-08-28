@@ -11,7 +11,7 @@
   "license": "ISC",
   "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
-    "@henderea/static-site-builder": "^1.0.48",
+    "@henderea/static-site-builder": "^1.0.49",
     "eslint": "^5.4.0"
   },
   "dependencies": {
