@@ -119,10 +119,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@henderea/static-site-builder@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.1.1.tgz#e7bccdffc89f59794a1597c35b9a2df0acee4016"
-  integrity sha512-vkfu1dRCwLmFZqr7icU5FRCvDprWtQZLpcLqS859HWsMjZoFY4+qbKuBRRNjyQngz1Ek/uL7xWwZ2SX0fSpwEw==
+"@henderea/static-site-builder@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.1.2.tgz#941678ec835599b349661aff68818d49c78256bc"
+  integrity sha512-zuDGj94mv/c7xbaGxn2QYzs6spcJSDLoSfGDB57rdBuvD/LnRguyC7XqguyfQttm8qLJnmztUHnS8nTUueypKA==
   dependencies:
     "@babel/core" "^7.1.2"
     babel-core "^6.26.3"
@@ -145,7 +145,7 @@
     recursive-readdir "^2.2.2"
     sass-loader "^7.1.0"
     strip-ansi "^5.0.0"
-    style-loader "^0.23.0"
+    style-loader "^0.23.1"
     sw-precache-webpack-plugin "^0.11.5"
     thread-loader "^1.2.0"
     webpack "^4.20.2"
@@ -4930,13 +4930,13 @@ strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-style-loader@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.23.0.tgz#8377fefab68416a2e05f1cabd8c3a3acfcce74f1"
-  integrity sha512-uCcN7XWHkqwGVt7skpInW6IGO1tG6ReyFQ1Cseh0VcN6VdcFQi62aG/2F3Y9ueA8x4IVlfaSUxpmQXQD9QrEuQ==
+style-loader@^0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.23.1.tgz#cb9154606f3e771ab6c4ab637026a1049174d925"
+  integrity sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg==
   dependencies:
     loader-utils "^1.1.0"
-    schema-utils "^0.4.5"
+    schema-utils "^1.0.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
