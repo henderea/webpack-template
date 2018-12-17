@@ -119,10 +119,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@henderea/static-site-builder@^1.1.9":
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.1.9.tgz#3e70b3d6b59abd2e7ba126cf1bece9360a600d7a"
-  integrity sha512-a3AS16v8jHamQ6Ajxsh1PCdzMf7NX3znspNGom2n6zwuMYnywP+vhvN7bR2LECP002G8rdXWJMD21EGq2Szb7w==
+"@henderea/static-site-builder@^1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.1.10.tgz#ac482e7d016f197a38e27062ed6a06fad92bfa3d"
+  integrity sha512-WGm6cAE69HM0Nuui6OcwHpEdItuVew5rm6iwDV9TlE+rgVaRqAadc7HoYT5LbRRP+vKVzKEyLT6zftxfrsY9pA==
   dependencies:
     "@babel/core" "^7.2.2"
     babel-core "^6.26.3"
