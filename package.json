@@ -5,6 +5,7 @@
   "main": "",
   "scripts": {
     "build": "static-site-builder build",
+    "now-build": "static-site-builder build",
     "watch": "static-site-builder watch"
   },
   "author": "henderea",
