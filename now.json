@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "webpack-template",
+    "public": false,
     "builds": [
         {
             "src": "package.json",
