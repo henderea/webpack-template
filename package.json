@@ -10,7 +10,8 @@
     "start": "concurrently \"yarn serve:dev\" \"yarn watch\" --names \"💻,📦\" --prefix name",
     "build": "static-site-builder build",
     "now-build": "static-site-builder build",
-    "watch": "static-site-builder watch"
+    "watch": "static-site-builder watch",
+    "clean": "rm -rf dist build"
   },
   "author": "henderea",
   "license": "ISC",
