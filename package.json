@@ -4,6 +4,10 @@
   "description": "A webpack template by henderea",
   "main": "",
   "scripts": {
+    "prod": "yarn build && yarn serve:prod",
+    "serve:prod": "serve dist",
+    "serve:dev": "serve build",
+    "start": "concurrently \"yarn serve:dev\" \"yarn watch\" --names \"💻,📦\" --prefix name",
     "build": "static-site-builder build",
     "now-build": "static-site-builder build",
     "watch": "static-site-builder watch"
@@ -13,7 +17,9 @@
   "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
     "@henderea/static-site-builder": "^1.1.11",
-    "eslint": "^5.10.0"
+    "concurrently": "^4.1.0",
+    "eslint": "^5.10.0",
+    "serve": "^10.1.1"
   },
   "dependencies": {
     "jquery": "^3.3.1",
