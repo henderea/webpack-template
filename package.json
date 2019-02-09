@@ -17,13 +17,13 @@
   "license": "ISC",
   "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
-    "@henderea/static-site-builder": "^1.2.4",
+    "@henderea/static-site-builder": "^1.2.6",
     "chalk": "^2.4.2",
     "concurrently": "^4.1.0",
     "diff": "^4.0.1",
-    "eslint": "^5.12.1",
-    "inquirer": "^6.2.1",
-    "serve": "^10.1.1"
+    "eslint": "^5.13.0",
+    "inquirer": "^6.2.2",
+    "serve": "^10.1.2"
   },
   "dependencies": {
     "jquery": "^3.3.1",
