@@ -11,7 +11,8 @@
     "build": "static-site-builder build",
     "now-build": "static-site-builder build",
     "watch": "static-site-builder watch",
-    "clean": "rm -rf dist build"
+    "clean": "rm -rf dist build",
+    "stage": "now --target staging"
   },
   "author": "henderea",
   "license": "ISC",
