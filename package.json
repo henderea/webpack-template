@@ -36,5 +36,8 @@
     "title": "",
     "description": "",
     "siteName": "JS Demos - henderea.com"
+  },
+  "installConfig": {
+    "pnp": true
   }
 }
