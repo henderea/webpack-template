@@ -158,7 +158,7 @@
   dependencies:
     "@hapi/hoek" "6.x.x"
 
-"@henderea/static-site-builder@^1.2.23":
+"@henderea/static-site-builder@^1.2.24":
   version "1.2.24"
   resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.2.24.tgz#2f056fc5c21f8b09ec4d167af7221bd16a95a434"
   integrity sha512-dPd4Shl7icndD22G0NzKq1Gm3Lw7x9gJC91vsJXY13OJBLK64tHDkRcsc3IaUu7aFvw80H+LUQoRhPlccxGrUg==
