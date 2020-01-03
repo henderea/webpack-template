@@ -89,7 +89,7 @@ prompt(questions).then(answers => {
     packageJson.description = answers.desc;
     if(answers.addDeploy) {
         if(answers.alias && answers.alias != '') {
-            packageJson.scripts.deploy = `now --target production && now rm ${answers.nowName} --safe --yes`;
+            packageJson.scripts.deploy = `now --prod && now rm ${answers.nowName} --safe --yes`;
         } else {
             packageJson.scripts.deploy = `now`;
         }
