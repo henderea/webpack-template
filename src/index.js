@@ -4,5 +4,7 @@ const $ = require('jquery');
 // const _ = require('lodash');
 // const rand = require('lodash/random');
 
-import registerServiceWorker from '@henderea/static-site-builder/registerServiceWorker';
-registerServiceWorker();
+if(process.env.NODE_ENV === 'production') {
+    const registerServiceWorker = require('@henderea/static-site-builder/registerServiceWorker');
+    registerServiceWorker();
+}
