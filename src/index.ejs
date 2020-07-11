@@ -1,40 +1,56 @@
 <%
-    const packageJson = require('../package.json');
-    const title = (packageJson.htmlMeta && packageJson.htmlMeta.title) || packageJson.name;
-    const description = (packageJson.htmlMeta && packageJson.htmlMeta.description) || packageJson.description;
-    const type = (packageJson.htmlMeta && packageJson.htmlMeta.type) || 'website';
-    const siteName = (packageJson.htmlMeta && packageJson.htmlMeta.siteName) || null;
-    const baseIcon = (packageJson.htmlMeta && packageJson.htmlMeta.icon && packageJson.htmlMeta.icon.trim().toLowerCase()) || null;
-    let iconUrl = null;
-    if(baseIcon && baseIcon != '') {
-        if(/^gravatar:(\S+)$/.test(baseIcon)) {
-            const gravatarParam = baseIcon.replace(/^gravatar:(\S+)$/, '$1');
-            let gravatarHash = null;
-            if(/^\S+@\S+\.\S+/.test(gravatarParam)) {
-                gravatarHash = require('md5')(gravatarParam);
-            } else if(/^[0-9a-f]{32}$/.test(gravatarParam)) {
-                gravatarHash = gravatarParam;
-            }
-            if(gravatarHash) {
-                iconUrl = `https://www.gravatar.com/avatar/${gravatarHash}.jpg?s=400`;
-            }
-        } else if(/^https?:\/\//.test(baseIcon)) {
-            iconUrl = baseIcon;
+const packageJson = require('../package.json');
+const title = (packageJson.htmlMeta && packageJson.htmlMeta.title) || packageJson.name;
+const description = (packageJson.htmlMeta && packageJson.htmlMeta.description) || packageJson.description;
+const type = (packageJson.htmlMeta && packageJson.htmlMeta.type) || 'website';
+const siteName = (packageJson.htmlMeta && packageJson.htmlMeta.siteName) || null;
+const baseIcon = (packageJson.htmlMeta && packageJson.htmlMeta.icon && packageJson.htmlMeta.icon.trim().toLowerCase()) || null;
+let imageUrl = (packageJson.htmlMeta && packageJson.htmlMeta.image);
+if(imageUrl) { imageUrl = String(imageUrl).trim(); }
+const themeColor = (packageJson.htmlMeta && packageJson.htmlMeta.themeColor) || null;
+let iconUrl = null;
+if(baseIcon && baseIcon != '') {
+    if(/^gravatar:(\S+)$/.test(baseIcon)) {
+        const gravatarParam = baseIcon.replace(/^gravatar:(\S+)$/, '$1');
+        let gravatarHash = null;
+        if(/^\S+@\S+\.\S+/.test(gravatarParam)) {
+            gravatarHash = require('md5')(gravatarParam);
+        } else if(/^[0-9a-f]{32}$/.test(gravatarParam)) {
+            gravatarHash = gravatarParam;
         }
+        if(gravatarHash) {
+            iconUrl = `https://www.gravatar.com/avatar/${gravatarHash}.jpg?s=400`;
+        }
+    } else if(/^https?:\/\//.test(baseIcon)) {
+        iconUrl = baseIcon;
     }
- %>
-<html>
+}
+%>
+<html lang="en" dir="ltr">
     <head>
         <title><%= title %></title>
-        <meta property="og:type" content="<%= type %>"/>
-        <meta property="og:title" content="<%= title %>"/>
-        <meta property="og:description" content="<%= description %>"/>
+        <meta property="og:type" content="<%= type %>" />
+        <meta property="og:title" content="<%= title %>" />
+        <meta property="og:description" content="<%= description %>" />
         <% if(siteName) { %>
-        <meta property="og:site_name" content="<%= siteName %>"/>
+        <meta property="og:site_name" content="<%= siteName %>" />
+        <% } %>
+        <% if(imageUrl) { %>
+        <meta property="og:image" content="<%= imageUrl %>" />
+        <% } else if(imageUrl !== false) { %>
+        <meta property="og:image" content="<%= iconUrl %>" />
         <% } %>
         <% if(iconUrl) { %>
-        <meta property="og:image" content="<%= iconUrl %>"/>
-        <link rel="icon" type="image/jpeg" href="<%= iconUrl %>"/>
+        <link rel="icon" type="image/jpeg" href="<%= iconUrl %>" />
+        <% } else { %>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+        <% } %>
+        <link rel="apple-touch-icon" sizes="360x360" href="/apple-touch-icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="/manifest.json" />
+        <% if(themeColor) {
+        <meta name="theme-color" content="<%= themeColor %>" />
         <% } %>
     </head>
     <body>

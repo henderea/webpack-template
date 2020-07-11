@@ -37,6 +37,8 @@
     "title": "",
     "description": "",
     "siteName": "JS Demos - henderea.com",
-    "icon": "gravatar:henderea@gmail.com"
+    "icon": "gravatar:henderea@gmail.com",
+    "image": null,
+    "themeColor": "#000000"
   }
 }

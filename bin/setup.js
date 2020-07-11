@@ -60,12 +60,42 @@ const questions = [
         name: 'repo',
         type: 'input',
         message: 'Repository url to go in package.json (optional)'
+    },
+    {
+        name: 'siteName',
+        type: 'input',
+        message: 'Site Name to go in manifest.json (defaults to the package.json name)'
+    },
+    {
+        name: 'siteShortName',
+        type: 'input',
+        message: 'Site Short Name to go in manifest.json (defaults to the site name)'
+    },
+    {
+        name: 'siteThemeColor',
+        type: 'input',
+        message: 'Site Theme Color to go in manifest.json',
+        default: '#000000'
+    },
+    {
+        name: 'siteBackgroundColor',
+        type: 'input',
+        message: 'Site Background Color to go in manifest.json',
+        default: '#ffffff'
+    },
+    {
+        name: 'siteDisplay',
+        type: 'input',
+        message: 'Site Display type to go in manifest.json',
+        default: 'minimal-ui'
     }
 ];
 
 prompt(questions).then(answers => {
     let packageJsonSrc = fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8');
+    let manifestJsonSrc = fs.readFileSync(path.join(__dirname, '../public/manifest.json'), 'utf8');
     let packageJson = JSON.parse(packageJsonSrc);
+    let manifestJson = JSON.parse(manifestJsonSrc);
     packageJson.name = answers.baseName;
     packageJson.description = answers.desc;
     if(answers.addDeploy) {
@@ -76,11 +106,23 @@ prompt(questions).then(answers => {
     } else {
         packageJson.repository = '';
     }
+    manifestJson.name = answers.siteName || answers.baseName;
+    manifestJson.short_name = answers.siteShortName || manifestJson.name;
+    manifestJson.theme_color = answers.siteThemeColor || '#000000';
+    manifestJson.background_color = answers.siteBackgroundColor || '#ffffff';
+    manifestJson.display = answers.siteDisplay || 'minimal-ui';
     let packageJsonDest = JSON.stringify(packageJson, null, 2);
+    let manifestJsonDest = JSON.stringify(manifestJson, null, 2);
     showDiff(packageJsonSrc, packageJsonDest, 'package.json');
     confirmSave().then(save => {
         if(save) {
             fs.writeFileSync(path.join(__dirname, '../package.json'), packageJsonDest);
         }
+        showDiff(manifestJsonSrc, manifestJsonDest, 'manifest.json');
+        confirmSave().then(save => {
+            if(save) {
+                fs.writeFileSync(path.join(__dirname, '../public/manifest.json'), manifestJsonDest);
+            }
+        });
     });
 });
