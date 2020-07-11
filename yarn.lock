@@ -826,10 +826,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@henderea/static-site-builder@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.7.2.tgz#311b8e35309cf3e85ff16d5b3885d01e94b9af05"
-  integrity sha512-TJy67+Mr4bZ5Ywq8NIkOQwz1PdHKbsh4FZw6gca8EMWFNBaw2PGrCTJPs2zudgPeprtrSQa+u2/SX7DDW2qBWQ==
+"@henderea/static-site-builder@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.7.3.tgz#bd560c8197ce496661cf117f749f6a64349d5e53"
+  integrity sha512-dpu4VT06akXdnjOlirXR1NcnTAwUXL4CTP/vPrVvQyvCg/KGk2WgA7lsu560USLNFSSs4WZGgxMBGqqTPb+8jg==
   dependencies:
     "@babel/core" "^7.10.4"
     babel-core "^6.26.3"
@@ -2035,9 +2035,9 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001097:
-  version "1.0.30001097"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001097.tgz#1129c40c9f5ee3282158da08fd915d301f4a9bd8"
-  integrity sha512-TeuSleKt/vWXaPkLVFqGDnbweYfq4IaZ6rUugFf3rWY6dlII8StUZ8Ddin0PkADfgYZ4wRqCdO2ORl4Rn5eZIA==
+  version "1.0.30001099"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001099.tgz#540118fcc6842d1fde62f4ee5521d1ec6afdb40e"
+  integrity sha512-sdS9A+sQTk7wKoeuZBN/YMAHVztUfVnjDi4/UV3sDE8xoh7YR12hKW+pIdB3oqKGwr9XaFL2ovfzt9w8eUI5CA==
 
 case-sensitive-paths-webpack-plugin@^2.3.0:
   version "2.3.0"
