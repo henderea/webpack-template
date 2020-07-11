@@ -60,62 +60,27 @@ const questions = [
         name: 'repo',
         type: 'input',
         message: 'Repository url to go in package.json (optional)'
-    },
-    {
-        name: 'nowName',
-        type: 'input',
-        message: 'Name to go in now.json',
-        default: projName
-    },
-    {
-        name: 'public',
-        type: 'confirm',
-        message: 'Make now sources and logs public?',
-        default: false
-    },
-    {
-        name: 'alias',
-        type: 'input',
-        message: 'Alias for now deployments (optional)'
     }
 ];
 
 prompt(questions).then(answers => {
     let packageJsonSrc = fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8');
-    let nowJsonSrc = fs.readFileSync(path.join(__dirname, '../now.json'), 'utf8');
     let packageJson = JSON.parse(packageJsonSrc);
-    let nowJson = JSON.parse(nowJsonSrc);
     packageJson.name = answers.baseName;
     packageJson.description = answers.desc;
     if(answers.addDeploy) {
-        if(answers.alias && answers.alias != '') {
-            packageJson.scripts.deploy = `now --prod && now rm ${answers.nowName} --safe --yes`;
-        } else {
-            packageJson.scripts.deploy = `now`;
-        }
+        packageJson.scripts.deploy = `vercel --prod`;
     }
     if(answers.repo && answers.repo != '') {
         packageJson.repository = answers.repo;
     } else {
         packageJson.repository = '';
     }
-    nowJson.name = answers.nowName;
-    nowJson.public = answers.public;
-    if(answers.alias && answers.alias != '') {
-        nowJson.alias = answers.alias;
-    }
     let packageJsonDest = JSON.stringify(packageJson, null, 2);
-    let nowJsonDest = JSON.stringify(nowJson, null, 4);
     showDiff(packageJsonSrc, packageJsonDest, 'package.json');
     confirmSave().then(save => {
         if(save) {
             fs.writeFileSync(path.join(__dirname, '../package.json'), packageJsonDest);
         }
-        showDiff(nowJsonSrc, nowJsonDest, 'now.json');
-        confirmSave().then(save => {
-            if(save) {
-                fs.writeFileSync(path.join(__dirname, '../now.json'), nowJsonDest);
-            }
-        });
     });
 });
