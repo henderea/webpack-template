@@ -1,12 +1,18 @@
 <%
 const packageJson = require('../package.json');
+const publicUrl = process.env.PUBLIC_URL;
 const title = (packageJson.htmlMeta && packageJson.htmlMeta.title) || packageJson.name;
 const description = (packageJson.htmlMeta && packageJson.htmlMeta.description) || packageJson.description;
 const type = (packageJson.htmlMeta && packageJson.htmlMeta.type) || 'website';
 const siteName = (packageJson.htmlMeta && packageJson.htmlMeta.siteName) || null;
 const baseIcon = (packageJson.htmlMeta && packageJson.htmlMeta.icon && packageJson.htmlMeta.icon.trim().toLowerCase()) || null;
 let imageUrl = (packageJson.htmlMeta && packageJson.htmlMeta.image);
-if(imageUrl) { imageUrl = String(imageUrl).trim(); }
+if(imageUrl) {
+    imageUrl = String(imageUrl).trim();
+    if(/^[/]/.test(imageUrl)) {
+        imageUrl = publicUrl + imageUrl;
+    }
+ }
 const themeColor = (packageJson.htmlMeta && packageJson.htmlMeta.themeColor) || null;
 let iconUrl = null;
 if(baseIcon && baseIcon != '') {
@@ -23,6 +29,8 @@ if(baseIcon && baseIcon != '') {
         }
     } else if(/^https?:\/\//.test(baseIcon)) {
         iconUrl = baseIcon;
+    } else if(/^[/]/.test(baseIcon)) {
+        iconUrl = publicUrl + baseIcon;
     }
 }
 %>
@@ -41,14 +49,14 @@ if(baseIcon && baseIcon != '') {
         <meta property="og:image" content="<%= iconUrl %>" />
         <% } %>
         <% if(iconUrl) { %>
-        <link rel="icon" type="image/jpeg" href="<%= iconUrl %>" />
+        <link rel="icon" href="<%= iconUrl %>" />
         <% } else { %>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="<%= publicUrl %>/favicon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="<%= publicUrl %>/favicon.svg" type="image/svg+xml" />
         <% } %>
-        <link rel="apple-touch-icon" sizes="360x360" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="360x360" href="<%= publicUrl %>/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="<%= publicUrl %>/manifest.json" />
         <% if(themeColor) {
         <meta name="theme-color" content="<%= themeColor %>" />
         <% } %>
