@@ -17,7 +17,11 @@ module.exports = function(env, mode, paths) {
             // the max size of the entrypoint above which webpack will warn: use null to keep the default, or specify a size with the suffix b, k, m, or g
             maxEntryPointSize: null,
             // the max size of assets above which webpack will warn: use null to keep the default, or specify a size with the suffix b, k, m, or g
-            maxAssetSize: null
+            maxAssetSize: null,
+            // extra loaders to add to the start of the list
+            extraLoaders: [],
+            // extra options for the HtmlWebpackPlugin
+            htmlWebpackPluginOptions: {},
         };
     } else {
         // extra environment content
@@ -27,7 +31,11 @@ module.exports = function(env, mode, paths) {
             // extra webpack plugins
             plugins: [],
             // webpack config overrides
-            webpack: {}
+            webpack: {},
+            // extra loaders to add to the start of the list
+            extraLoaders: [],
+            // extra options for the HtmlWebpackPlugin
+            htmlWebpackPluginOptions: {},
         };
     }
 }
