@@ -34,12 +34,14 @@ if(baseIcon && baseIcon != '') {
     }
 }
 %>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <title><%= title %></title>
         <meta property="og:type" content="<%= type %>" />
         <meta property="og:title" content="<%= title %>" />
         <meta property="og:description" content="<%= description %>" />
+        <meta name="description" content="<%= description %>" />
         <% if(siteName) { %>
         <meta property="og:site_name" content="<%= siteName %>" />
         <% } %>

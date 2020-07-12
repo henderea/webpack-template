@@ -826,10 +826,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@henderea/static-site-builder@^1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.7.3.tgz#bd560c8197ce496661cf117f749f6a64349d5e53"
-  integrity sha512-dpu4VT06akXdnjOlirXR1NcnTAwUXL4CTP/vPrVvQyvCg/KGk2WgA7lsu560USLNFSSs4WZGgxMBGqqTPb+8jg==
+"@henderea/static-site-builder@^1.7.11":
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.7.11.tgz#e8a3cf30e73a26337a270c939bb90e937dc3d961"
+  integrity sha512-hLC8uqi/cUiw9Nu0ZUaqFrOyxFhlvXAgsVZja2mUW9zZtP/mKwKg52/tLyqeyIQ20CJoVxVWYOKzfQX2Mn+3AA==
   dependencies:
     "@babel/core" "^7.10.4"
     babel-core "^6.26.3"
@@ -861,6 +861,7 @@
     style-loader "^1.2.1"
     thread-loader "^2.1.3"
     ts-loader "^8.0.0"
+    tsconfig-paths-webpack-plugin "^3.2.0"
     typescript "^3.9.6"
     webpack "^4.43.0"
     webpack-manifest-plugin "^2.2.0"
@@ -966,6 +967,11 @@
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
   integrity sha512-7+2BITlgjgDhH0vvwZU/HZJVyk+2XUlvxXe8dFMedNX/aMkaOq++rMAFXc0tM7ij15QaWlbdQASBR9dihi+bDQ==
+
+"@types/json5@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
+  integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
 "@types/lodash@^4.14.157":
   version "4.14.157"
@@ -6848,6 +6854,11 @@ strip-bom@^2.0.0:
   dependencies:
     is-utf8 "^0.2.0"
 
+strip-bom@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+  integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
+
 strip-comments@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/strip-comments/-/strip-comments-1.0.2.tgz#82b9c45e7f05873bee53f37168af930aa368679d"
@@ -7132,6 +7143,25 @@ ts-node@8.9.1:
     make-error "^1.1.1"
     source-map-support "^0.5.17"
     yn "3.1.1"
+
+tsconfig-paths-webpack-plugin@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-3.2.0.tgz#6e70bd42915ad0efb64d3385163f0c1270f3e04d"
+  integrity sha512-S/gOOPOkV8rIL4LurZ1vUdYCVgo15iX9ZMJ6wx6w2OgcpT/G4wMyHB6WM+xheSqGMrWKuxFul+aXpCju3wmj/g==
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^4.0.0"
+    tsconfig-paths "^3.4.0"
+
+tsconfig-paths@^3.4.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz#098547a6c4448807e8fcb8eae081064ee9a3c90b"
+  integrity sha512-dRcuzokWhajtZWkQsDVKbWyY+jgcLC5sqJhg2PSgf4ZkH2aHPvaOY8YWGhmjb68b5qqTfasSsDO9k7RUiEmZAw==
+  dependencies:
+    "@types/json5" "^0.0.29"
+    json5 "^1.0.1"
+    minimist "^1.2.0"
+    strip-bom "^3.0.0"
 
 tslib@^1.10.0, tslib@^1.9.0:
   version "1.13.0"
