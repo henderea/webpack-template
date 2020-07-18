@@ -37,6 +37,10 @@ function confirmSave() {
     }).then(answers => answers.save);
 }
 
+function c(name, value = name, short = name) {
+    return { name, value, short };
+}
+
 var prompt = inquirer.createPromptModule();
 const questions = [
     {
@@ -85,8 +89,14 @@ const questions = [
     },
     {
         name: 'siteDisplay',
-        type: 'input',
+        type: 'list',
         message: 'Site Display type to go in manifest.json',
+        choices: [
+            c('Minimal UI', 'minimal-ui'),
+            c('Fullscreen', 'fullscreen'),
+            c('Standalone', 'standalone'),
+            c('Browser (Not recommended)', 'browser', 'Browser')
+        ],
         default: 'minimal-ui'
     }
 ];
