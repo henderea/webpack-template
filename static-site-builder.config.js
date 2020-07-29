@@ -15,7 +15,7 @@ module.exports = function(env, mode, paths) {
             // the severity of the size hints warning: use false for disabling, 'warning' for warning (default; used with null), or 'error' for failing the build
             sizeHints: null,
             // the max size of the entrypoint above which webpack will warn: use null to keep the default, or specify a size with the suffix b, k, m, or g
-            maxEntryPointSize: null,
+            maxEntrypointSize: null,
             // the max size of assets above which webpack will warn: use null to keep the default, or specify a size with the suffix b, k, m, or g
             maxAssetSize: null,
             // extra loaders to add to the start of the list
