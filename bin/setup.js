@@ -170,7 +170,7 @@ prompt(questions).then(async answers => {
     });
     fs.unlinkSync(path.join(__dirname, '../src/index-sample.ts'));
     fs.unlinkSync(path.join(__dirname, '../tsconfig.json'));
-    fs.unlinkSync(path.join(__dirname, '../ts-types'));
+    fs.rmdirSync(path.join(__dirname, '../ts-types'));
   }
 
   console.log(chalk.bold.blue('Cleaning Up'));
@@ -180,6 +180,6 @@ prompt(questions).then(async answers => {
     stdio: 'inherit',
     cwd: path.join(__dirname, '..')
   });
-  fs.unlinkSync(__dirname);
+  fs.rmdirSync(__dirname);
   console.log(doneMsg);
 });
