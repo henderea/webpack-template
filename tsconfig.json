@@ -1,34 +1,38 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "declaration": true,
-      "declarationDir": "./ts-lib",
-      "strict": true,
-      "lib": [
-        "es2015",
-        "dom",
-        "esnext"
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "declarationDir": "./ts-lib",
+    "strict": true,
+    "lib": [
+      "es2015",
+      "dom",
+      "esnext"
+    ],
+    "types": [
+      "jquery",
+      "lodash"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "lib/*": [
+        "lib/*"
       ],
-      "types": [
-        "jquery",
-        "lodash"
-      ],
-      "baseUrl": ".",
-      "paths": {
-        "lib/*": [
-          "lib/*"
-        ],
-        "ts-lib/*": [
-          "ts-lib/*"
-        ]
-      },
-      "typeRoots": ["./node_modules/@types"],
-      "allowSyntheticDefaultImports": true,
-      "sourceMap": true
+      "ts-lib/*": [
+        "ts-lib/*"
+      ]
     },
-    "include": [
-      "src/**/*.ts",
-      "lib/**/*.ts"
-    ]
-  }
+    "typeRoots": [
+      "./node_modules/@types",
+      "./ts-types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "lib/**/*.ts",
+    "ts-types/**/*.ts"
+  ]
+}

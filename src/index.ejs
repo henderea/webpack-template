@@ -12,10 +12,11 @@ if(imageUrl) {
     if(/^[/]/.test(imageUrl)) {
         imageUrl = publicUrl + imageUrl;
     }
- }
+}
+// noinspection JSUnresolvedVariable
 const themeColor = (packageJson.htmlMeta && packageJson.htmlMeta.themeColor) || null;
 let iconUrl = null;
-if(baseIcon && baseIcon != '') {
+if(baseIcon && baseIcon !== '') {
     if(/^gravatar:(\S+)$/.test(baseIcon)) {
         const gravatarParam = baseIcon.replace(/^gravatar:(\S+)$/, '$1');
         let gravatarHash = null;
@@ -43,24 +44,24 @@ if(baseIcon && baseIcon != '') {
         <meta property="og:description" content="<%= description %>" />
         <meta name="description" content="<%= description %>" />
         <% if(siteName) { %>
-        <meta property="og:site_name" content="<%= siteName %>" />
+            <meta property="og:site_name" content="<%= siteName %>" />
         <% } %>
         <% if(imageUrl) { %>
-        <meta property="og:image" content="<%= imageUrl %>" />
+            <meta property="og:image" content="<%= imageUrl %>" />
         <% } else if(imageUrl !== false) { %>
-        <meta property="og:image" content="<%= iconUrl %>" />
+            <meta property="og:image" content="<%= iconUrl %>" />
         <% } %>
         <% if(iconUrl) { %>
-        <link rel="icon" href="<%= iconUrl %>" />
+            <link rel="icon" href="<%= iconUrl %>" />
         <% } else { %>
-        <link rel="icon" href="<%= publicUrl %>/favicon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="<%= publicUrl %>/favicon.svg" type="image/svg+xml" />
+            <link rel="icon" href="<%= publicUrl %>/favicon.svg" type="image/svg+xml" />
+            <link rel="shortcut icon" href="<%= publicUrl %>/favicon.svg" type="image/svg+xml" />
         <% } %>
         <link rel="apple-touch-icon" sizes="360x360" href="<%= publicUrl %>/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="manifest" href="<%= publicUrl %>/manifest.json" />
         <% if(themeColor) { %>
-        <meta name="theme-color" content="<%= themeColor %>" />
+            <meta name="theme-color" content="<%= themeColor %>" />
         <% } %>
     </head>
     <body>

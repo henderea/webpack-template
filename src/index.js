@@ -5,6 +5,6 @@ const $ = require('jquery');
 // const rand = require('lodash/random');
 
 if(process.env.NODE_ENV === 'production') {
-    const registerServiceWorker = require('@henderea/static-site-builder/registerServiceWorker');
-    registerServiceWorker();
+  const registerServiceWorker = require('@henderea/static-site-builder/registerServiceWorker');
+  registerServiceWorker();
 }
