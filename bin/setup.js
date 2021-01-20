@@ -128,7 +128,7 @@ prompt(questions).then(async answers => {
   packageJson.description = answers.desc;
   // noinspection JSUnresolvedVariable
   if(answers.addDeploy) {
-    packageJson.scripts.deploy = `vercel --prod`;
+    packageJson.scripts.deploy = `vercel --prod -C`;
   }
   // noinspection JSUnresolvedVariable
   if(answers.repo && answers.repo !== '') {
