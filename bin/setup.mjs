@@ -1,19 +1,23 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const _ = require('lodash');
-const jsdiff = require('diff');
-const chalk = require('chalk');
-const inquirer = require('inquirer');
-const { spawnSync } = require('child_process');
+import _ from 'lodash';
+import { diffLines } from 'diff';
+import chalk from 'chalk';
+import inquirer from 'inquirer';
+import { spawnSync } from 'child_process';
 
-const projName = path.basename(path.join(__dirname, '..'));
+import { fileURLToPath } from 'url';
+
+const dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const projName = path.basename(path.join(dirname, '..'));
 
 function showDiff(oldSrc, newSrc, name) {
   console.log(chalk.bold(name));
-  const diff = jsdiff.diffLines(oldSrc, newSrc);
-  const hasChanges = _.some(diff, part => part.added || part.removed);
+  const diff = diffLines(oldSrc, newSrc);
+  const hasChanges = _.some(diff, (part) => part.added || part.removed);
   if(hasChanges) {
     console.log(_.compact(_.map(diff, (part) => {
       const color = part.added ? chalk.green : part.removed ? chalk.red : null;
@@ -47,7 +51,6 @@ async function askConfirm(message, defaultValue = false) {
     message,
     default: defaultValue
   });
-  // noinspection JSUnresolvedVariable
   return answers.resp;
 }
 
@@ -119,59 +122,53 @@ const questions = [
   }
 ];
 
-prompt(questions).then(async answers => {
-  let packageJsonSrc = fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8');
-  let manifestJsonSrc = fs.readFileSync(path.join(__dirname, '../public/manifest.json'), 'utf8');
+prompt(questions).then(async (answers) => {
+  let packageJsonSrc = fs.readFileSync(path.join(dirname, '../package.json'), 'utf8');
+  let manifestJsonSrc = fs.readFileSync(path.join(dirname, '../public/manifest.json'), 'utf8');
   let packageJson = JSON.parse(packageJsonSrc);
   let manifestJson = JSON.parse(manifestJsonSrc);
   packageJson.name = answers.baseName;
   packageJson.description = answers.desc;
-  // noinspection JSUnresolvedVariable
   if(answers.addDeploy) {
     packageJson.scripts.deploy = `vercel --prod -C`;
   }
-  // noinspection JSUnresolvedVariable
   if(answers.repo && answers.repo !== '') {
     packageJson.repository = answers.repo;
   } else {
     packageJson.repository = '';
   }
   manifestJson.name = answers.siteName || answers.baseName;
-  // noinspection JSUnresolvedVariable
   manifestJson.short_name = answers.siteShortName || manifestJson.name;
-  // noinspection JSUnresolvedVariable
   manifestJson.theme_color = answers.siteThemeColor || '#000';
-  // noinspection JSUnresolvedVariable
   manifestJson.background_color = answers.siteBackgroundColor || '#fff';
-  // noinspection JSUnresolvedVariable
   manifestJson.display = answers.siteDisplay || 'minimal-ui';
   let packageJsonDest = JSON.stringify(packageJson, null, 2);
   let manifestJsonDest = JSON.stringify(manifestJson, null, 2);
   showDiff(packageJsonSrc, packageJsonDest, 'package.json');
   if(await confirmSave()) {
-    fs.writeFileSync(path.join(__dirname, '../package.json'), packageJsonDest);
+    fs.writeFileSync(path.join(dirname, '../package.json'), packageJsonDest);
   }
   showDiff(manifestJsonSrc, manifestJsonDest, 'manifest.json');
   if(await confirmSave()) {
-    fs.writeFileSync(path.join(__dirname, '../public/manifest.json'), manifestJsonDest);
+    fs.writeFileSync(path.join(dirname, '../public/manifest.json'), manifestJsonDest);
   }
 
   let useTs = await askConfirm('Use TypeScript?');
   if(useTs) {
     console.log(chalk.bold.blue('Switching to TypeScript'));
-    fs.unlinkSync(path.join(__dirname, '../src/index.js'));
-    fs.renameSync(path.join(__dirname, '../src/index-sample.ts'), path.join(__dirname, '../src/index.ts'));
+    fs.unlinkSync(path.join(dirname, '../src/index.js'));
+    fs.renameSync(path.join(dirname, '../src/index-sample.ts'), path.join(dirname, '../src/index.ts'));
   } else {
-    console.log(chalk.bold.blue('Removing TypeScript files and dependencies'))
+    console.log(chalk.bold.blue('Removing TypeScript files and dependencies'));
     console.log(`> yarn remove @types/jquery @types/lodash`);
     spawnSync('yarn', ['remove', '@types/jquery', '@types/lodash'], {
       stdio: 'inherit',
-      cwd: path.join(__dirname, '..')
+      cwd: path.join(dirname, '..')
     });
-    fs.unlinkSync(path.join(__dirname, '../src/index-sample.ts'));
-    fs.unlinkSync(path.join(__dirname, '../tsconfig.json'));
-    fs.unlinkSync(path.join(__dirname, '../ts-types/global.d.ts'));
-    fs.rmdirSync(path.join(__dirname, '../ts-types'));
+    fs.unlinkSync(path.join(dirname, '../src/index-sample.ts'));
+    fs.unlinkSync(path.join(dirname, '../tsconfig.json'));
+    fs.unlinkSync(path.join(dirname, '../ts-types/global.d.ts'));
+    fs.rmdirSync(path.join(dirname, '../ts-types'));
   }
 
   console.log(chalk.bold.blue('Cleaning Up'));
@@ -179,9 +176,9 @@ prompt(questions).then(async answers => {
   console.log('> yarn remove chalk diff inquirer ');
   spawnSync('yarn', ['remove', 'chalk', 'diff', 'inquirer'], {
     stdio: 'inherit',
-    cwd: path.join(__dirname, '..')
+    cwd: path.join(dirname, '..')
   });
-  fs.unlinkSync(path.join(__dirname, 'setup.js'));
-  fs.rmdirSync(__dirname);
+  fs.unlinkSync(path.join(dirname, 'setup.js'));
+  fs.rmdirSync(dirname);
   console.log(doneMsg);
 });

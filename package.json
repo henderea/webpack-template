@@ -17,23 +17,27 @@
   "license": "ISC",
   "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
-    "@henderea/static-site-builder": "^1.9.6",
-    "@types/jquery": "^3.5.5",
-    "@types/lodash": "^4.14.168",
-    "browser-sync": "^2.26.14",
-    "chalk": "^4.1.0",
-    "concurrently": "^5.3.0",
+    "@babel/core": "^7.16.5",
+    "@babel/eslint-parser": "^7.16.5",
+    "@henderea/static-site-builder": "^1.10.1",
+    "@types/jquery": "^3.5.10",
+    "@types/lodash": "^4.14.178",
+    "browser-sync": "^2.27.7",
+    "chalk": "^5.0.0",
+    "concurrently": "^6.5.1",
     "diff": "^5.0.0",
-    "eslint": "^7.19.0",
-    "inquirer": "^7.3.3",
+    "eslint": "^8.4.1",
+    "eslint-config-henderea": "1.0.9",
+    "eslint-plugin-import": "^2.25.3",
+    "inquirer": "^8.2.0",
     "md5": "^2.3.0",
-    "serve": "^11.3.2",
-    "vercel": "^21.2.3"
+    "serve": "^13.0.2",
+    "vercel": "^23.1.2"
   },
   "dependencies": {
-    "jquery": "^3.5.1",
-    "jquery-ui": "^1.12.1",
-    "lodash": "^4.17.20"
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.13.0",
+    "lodash": "^4.17.21"
   },
   "htmlMeta": {
     "type": "",
@@ -44,5 +48,8 @@
     "image": null,
     "themeColor": "#000000"
   },
-  "homepage": "/"
+  "homepage": "/",
+  "eslintConfig": {
+    "extends": "henderea"
+  }
 }
