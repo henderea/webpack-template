@@ -19,7 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
-    "@henderea/static-site-builder": "^1.10.1",
+    "@henderea/static-site-builder": "^1.10.2",
     "@types/jquery": "^3.5.10",
     "@types/lodash": "^4.14.178",
     "browser-sync": "^2.27.7",

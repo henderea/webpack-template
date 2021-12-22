@@ -920,10 +920,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@henderea/static-site-builder@^1.10.1":
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.10.1.tgz#383de015967b2aff83b7d801b0b393ac087694a5"
-  integrity sha512-w7kHORVXF20mKu49f4QfpeJrlr/RcF0m9RKuO+KE5xB0BiBgJA5bIAuE1hW2QmV2X75IO/reD6PQxjTN7qlgEQ==
+"@henderea/static-site-builder@^1.10.2":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.10.2.tgz#f317ca5948982b1719cc1d0e30c362faf422f005"
+  integrity sha512-Svn52plqfgwKtmpl5jgU9XYCFU+qO5USYsJPqtv2zoy6lIXo7F/Pip8j0oKNEsvVAk12xOfPxurHEBVeevk6Pg==
   dependencies:
     "@babel/core" "^7.16.5"
     babel-core "^6.26.3"
