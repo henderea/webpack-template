@@ -178,7 +178,7 @@ prompt(questions).then(async (answers) => {
     stdio: 'inherit',
     cwd: path.join(dirname, '..')
   });
-  fs.unlinkSync(path.join(dirname, 'setup.js'));
+  fs.unlinkSync(path.join(dirname, 'setup.mjs'));
   fs.rmdirSync(dirname);
   console.log(doneMsg);
 });
