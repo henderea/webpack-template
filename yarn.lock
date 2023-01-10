@@ -1063,10 +1063,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@henderea/static-site-builder@^1.10.3":
-  version "1.10.3"
-  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.10.3.tgz#025d1ed716039a7bb0c5370ac544201bf2a7ff9a"
-  integrity sha512-kHAzMhHy7Yjil6ATi541VmEIenyLYOWCElQ1jpse6STCvIUyXd/QSo1TLP9MyuR+t4O6M/yqazKk5LPwil9SGQ==
+"@henderea/static-site-builder@^1.10.4":
+  version "1.10.4"
+  resolved "https://registry.yarnpkg.com/@henderea/static-site-builder/-/static-site-builder-1.10.4.tgz#f79f19f19a117c419a9d48615d753966e01f34a0"
+  integrity sha512-msC34dE7fzKsk7bQE61K6XNsPZj8b13sPWyiTw8lIeaAj9TtxaezNp4m1bkuUW0DPIAPnr+V1rhXC8gNo0CYYw==
   dependencies:
     "@babel/core" "^7.20.12"
     babel-core "^6.26.3"
