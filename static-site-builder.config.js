@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 module.exports = function(env, mode, paths) {
   if(mode === 'production') {
     // extra environment content
