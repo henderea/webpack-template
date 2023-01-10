@@ -2,8 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "declaration": true,
-    "declarationDir": "./ts-lib",
+    "declaration": false,
     "strict": true,
     "lib": [
       "es2015",
