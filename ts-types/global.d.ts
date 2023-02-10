@@ -10,5 +10,6 @@ declare let process: {
   env: {
     NODE_ENV: 'development' | 'production',
     VERCEL_URL: Optional<string>;
+    BUILD_TIME: `${number}`;
   }
 };
