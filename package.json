@@ -37,7 +37,7 @@
     "md5": "^2.3.0",
     "serve": "^14.2.1",
     "typescript": "^5.4.3",
-    "vercel": "^33.6.1"
+    "vercel": "^33.6.2"
   },
   "dependencies": {
     "jquery": "^3.7.1",
