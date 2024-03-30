@@ -33,7 +33,7 @@
     "eslint": "^8.57.0",
     "eslint-config-henderea": "^1.1.30",
     "eslint-plugin-import": "^2.29.1",
-    "inquirer": "^9.2.16",
+    "inquirer": "^9.2.17",
     "md5": "^2.3.0",
     "serve": "^14.2.1",
     "typescript": "^5.4.3",
