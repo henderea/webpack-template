@@ -13,3 +13,11 @@ declare let process: {
     BUILD_TIME: `${number}`;
   }
 };
+
+interface JQueryStatic {
+  (document: Document): JQuery<Document>;
+  <TElement extends HTMLElement = HTMLElement>(selector: JQuery.Selector | TElement | JQuery<TElement>, context?: Element | Document | JQuery | JQuery.Selector): JQuery<TElement>;
+  (...args: any[]): JQuery
+}
+
+type JQueryable<TElement = HTMLElement> = JQuery<TElement> | JQuery.Selector | TElement;
