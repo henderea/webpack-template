@@ -78,7 +78,7 @@ const questions = [
   {
     name: 'addDeploy',
     type: 'confirm',
-    message: 'Add a "npm deploy" command?',
+    message: 'Add a "pnpm run deploy" command?',
     default: false
   },
   {
@@ -160,8 +160,8 @@ prompt(questions).then(async (answers) => {
     fs.renameSync(path.join(dirname, '../src/index-sample.ts'), path.join(dirname, '../src/index.ts'));
   } else {
     console.log(chalk.bold.blue('Removing TypeScript files and dependencies'));
-    console.log(`> npm uninstall --save @types/jquery @types/lodash`);
-    spawnSync('npm', ['uninstall', '--save', '@types/jquery', '@types/lodash'], {
+    console.log(`> pnpm remove @types/jquery @types/lodash`);
+    spawnSync('pnpm', ['remove', '@types/jquery', '@types/lodash'], {
       stdio: 'inherit',
       cwd: path.join(dirname, '..')
     });
@@ -173,8 +173,8 @@ prompt(questions).then(async (answers) => {
 
   console.log(chalk.bold.blue('Cleaning Up'));
   const doneMsg = chalk.bold.green('Cleanup complete');
-  console.log('> npm uninstall --save chalk diff inquirer ');
-  spawnSync('npm', ['uninstall', '--save', 'chalk', 'diff', 'inquirer'], {
+  console.log('> pnpm remove chalk diff inquirer ');
+  spawnSync('pnpm', ['remove', 'chalk', 'diff', 'inquirer'], {
     stdio: 'inherit',
     cwd: path.join(dirname, '..')
   });
