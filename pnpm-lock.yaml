@@ -40,6 +40,9 @@ devDependencies:
   concurrently:
     specifier: ^8.2.2
     version: 8.2.2
+  css-loader:
+    specifier: ^6.10.0
+    version: 6.10.0(webpack@5.91.0)
   diff:
     specifier: ^5.2.0
     version: 5.2.0
@@ -52,15 +55,39 @@ devDependencies:
   eslint-plugin-import:
     specifier: ^2.29.1
     version: 2.29.1(@typescript-eslint/parser@7.4.0)(eslint@8.57.0)
+  file-loader:
+    specifier: ^6.2.0
+    version: 6.2.0(webpack@5.91.0)
   inquirer:
     specifier: ^9.2.17
     version: 9.2.17
   md5:
     specifier: ^2.3.0
     version: 2.3.0
+  postcss-loader:
+    specifier: ^8.1.1
+    version: 8.1.1(postcss@8.4.38)(typescript@5.4.3)(webpack@5.91.0)
+  postcss-preset-env:
+    specifier: ^9.5.3
+    version: 9.5.3(postcss@8.4.38)
+  sass:
+    specifier: ^1.72.0
+    version: 1.72.0
+  sass-loader:
+    specifier: ^14.1.1
+    version: 14.1.1(sass@1.72.0)(webpack@5.91.0)
   serve:
     specifier: ^14.2.1
     version: 14.2.1
+  style-loader:
+    specifier: ^3.3.4
+    version: 3.3.4(webpack@5.91.0)
+  thread-loader:
+    specifier: ^4.0.2
+    version: 4.0.2(webpack@5.91.0)
+  ts-loader:
+    specifier: ^9.5.1
+    version: 9.5.1(typescript@5.4.3)(webpack@5.91.0)
   typescript:
     specifier: ^5.4.3
     version: 5.4.3
