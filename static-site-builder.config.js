@@ -34,6 +34,8 @@ module.exports = function(env, mode, _paths) {
     const extraLoaders = [];
     // extra options for the HtmlWebpackPlugin
     const htmlWebpackPluginOptions = {};
+    // set to true to disable service worker and manifest creation
+    const disableSW = false;
     // override options for postcss
     const postcssOptions = {
       // plugins: ['postcss-preset-env']
@@ -48,6 +50,7 @@ module.exports = function(env, mode, _paths) {
       maxAssetSize,
       extraLoaders: _.concat([], commonExtraLoaders, extraLoaders),
       htmlWebpackPluginOptions: _.defaultsDeep({}, commonHtmlWebpackPluginOptions, htmlWebpackPluginOptions),
+      disableSW,
       postcssOptions: _.defaultsDeep({}, commonPostCssOptions, postcssOptions),
     };
   } else {
