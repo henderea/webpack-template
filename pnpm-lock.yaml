@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@henderea/static-site-builder':
-    specifier: ^1.10.31
-    version: 1.10.31(postcss@8.4.38)(typescript@5.4.5)
+    specifier: ^1.10.32
+    version: 1.10.32(postcss@8.4.38)(typescript@5.4.5)
   '@types/jquery':
     specifier: ^3.5.29
     version: 3.5.29
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^6.2.0
     version: 6.2.0(webpack@5.91.0)
   inquirer:
-    specifier: ^9.2.17
-    version: 9.2.17
+    specifier: ^9.2.18
+    version: 9.2.18
   md5:
     specifier: ^2.3.0
     version: 2.3.0
@@ -1800,8 +1800,8 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /@henderea/static-site-builder@1.10.31(postcss@8.4.38)(typescript@5.4.5):
-    resolution: {integrity: sha512-y4qdy3BgU24NgNt2YALip/2Cgnu3EWQQGnPVCspm+CawvJVcdWuCi7ZwMgMt8iqq3eYqS9Efj+QXA8OliTrXnQ==}
+  /@henderea/static-site-builder@1.10.32(postcss@8.4.38)(typescript@5.4.5):
+    resolution: {integrity: sha512-TbHwhc2gX2HI89KaJzM0M/3MNd9ohTNLN0Dtk2t2EAjKhXkDijQyueE9z1UNvxiQfUCGlTOq7gNxXaW/fcg6KQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
@@ -1814,7 +1814,7 @@ packages:
       css-loader: 7.1.1(webpack@5.91.0)
       dotenv: 16.4.5
       dotenv-expand: 11.0.6
-      ejs: 3.1.9
+      ejs: 3.1.10
       file-loader: 6.2.0(webpack@5.91.0)
       filesize: 10.1.1
       find-pkg: 2.0.0
@@ -1871,6 +1871,11 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    dev: true
+
+  /@inquirer/figures@1.0.0:
+    resolution: {integrity: sha512-3fw+7+77/duTnMJTeSS44wneszghI4tkr0m0xdIJabbYRe36ElzmsqyboMZ1nFRon6sT+ckVvYDVjwapKv+2sw==}
+    engines: {node: '>=18'}
     dev: true
 
   /@jridgewell/gen-mapping@0.3.5:
@@ -2041,7 +2046,7 @@ packages:
   /@surma/rollup-plugin-off-main-thread@2.2.3:
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
     dependencies:
-      ejs: 3.1.9
+      ejs: 3.1.10
       json5: 2.2.3
       magic-string: 0.25.9
       string.prototype.matchall: 4.0.11
@@ -3131,7 +3136,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001609
-      electron-to-chromium: 1.4.735
+      electron-to-chromium: 1.4.736
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: true
@@ -3907,16 +3912,16 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /ejs@3.1.9:
-    resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
+  /ejs@3.1.10:
+    resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
       jake: 10.8.7
     dev: true
 
-  /electron-to-chromium@1.4.735:
-    resolution: {integrity: sha512-pkYpvwg8VyOTQAeBqZ7jsmpCjko1Qc6We1ZtZCjRyYbT5v4AIUKDy5cQTRotQlSSZmMr8jqpEt6JtOj5k7lR7A==}
+  /electron-to-chromium@1.4.736:
+    resolution: {integrity: sha512-Rer6wc3ynLelKNM4lOCg7/zPQj8tPOCB2hzD32PX9wd3hgRRi9MxEbmkFCokzcEhRVMiOVLjnL9ig9cefJ+6+Q==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -4651,13 +4656,6 @@ packages:
       pend: 1.2.0
     dev: true
 
-  /figures@3.2.0:
-    resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
-    engines: {node: '>=8'}
-    dependencies:
-      escape-string-regexp: 1.0.5
-    dev: true
-
   /file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -5317,17 +5315,17 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /inquirer@9.2.17:
-    resolution: {integrity: sha512-Vr3Ia2ud5sGnioURkE69endl4SkeJcMzTF6SosKcX5GALJfId7C+JvO5ZZb6y1LOXnEofCPbwzoQ1q0e8Gaduw==}
+  /inquirer@9.2.18:
+    resolution: {integrity: sha512-Qzm+UP7L9beFyycZ9Nxzqj7WBgeJIaT4Ue0+2bmQp9yZXiUW2azrmBnp3vlInMw1wXkUmaM0hiMcht7CjJzASw==}
     engines: {node: '>=18'}
     dependencies:
+      '@inquirer/figures': 1.0.0
       '@ljharb/through': 2.3.13
       ansi-escapes: 4.3.2
       chalk: 5.3.0
       cli-cursor: 3.1.0
       cli-width: 4.1.0
       external-editor: 3.1.0
-      figures: 3.2.0
       lodash: 4.17.21
       mute-stream: 1.0.0
       ora: 5.4.1
