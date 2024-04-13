@@ -8,7 +8,7 @@
     "lint:fix": "eslint --fix .",
     "prod": "pnpm build && pnpm serve:prod",
     "serve:prod": "serve dist",
-    "serve:dev": "browser-sync start --server build --files build",
+    "serve:dev": "browser-sync start --config bs-config.js",
     "serve:dev:static": "serve build",
     "start": "concurrently \"sleep 5 && pnpm serve:dev\" \"pnpm watch\" --names \"💻,📦\" --prefix name",
     "start:static": "concurrently \"sleep 5 && pnpm serve:dev:static\" \"pnpm watch\" --names \"💻,📦\" --prefix name",
