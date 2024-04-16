@@ -35,7 +35,7 @@
     "eslint-config-henderea": "^1.1.36",
     "eslint-plugin-import": "^2.29.1",
     "file-loader": "^6.2.0",
-    "inquirer": "^9.2.18",
+    "inquirer": "^9.2.19",
     "md5": "^2.3.0",
     "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^9.5.5",
