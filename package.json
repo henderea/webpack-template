@@ -23,7 +23,7 @@
   "devDependencies": {
     "@henderea/static-site-builder": "^1.10.57",
     "@types/jquery": "^3.5.30",
-    "@types/lodash": "^4.17.5",
+    "@types/lodash": "^4.17.6",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.14.1",
     "browser-sync": "^3.0.2",
@@ -35,7 +35,7 @@
     "eslint-config-henderea": "^1.1.46",
     "eslint-plugin-import": "^2.29.1",
     "file-loader": "^6.2.0",
-    "inquirer": "^9.2.23",
+    "inquirer": "^9.3.1",
     "md5": "^2.3.0",
     "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^9.5.14",
