@@ -61,8 +61,8 @@ importers:
         specifier: ^6.2.0
         version: 6.2.0(webpack@5.93.0)
       inquirer:
-        specifier: ^10.0.2
-        version: 10.0.2
+        specifier: ^10.0.3
+        version: 10.0.3
       md5:
         specifier: ^2.3.0
         version: 2.3.0
@@ -989,8 +989,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@inquirer/checkbox@2.3.11':
-    resolution: {integrity: sha512-pCt02FZNLX9u8j/42n6iJyJnInbrvrygOfX+Fc4TcASbNRwNUcvhjxR2t49AdlmiO8oXAT3GhFH1T+2GpZPCfw==}
+  '@inquirer/checkbox@2.4.0':
+    resolution: {integrity: sha512-XHOCmntitRBD8SJcrv+6X9YakxO1wfsvezOnU5MBIXeTlSBRCVk9DOIrx6Cgi9BS3qkcy7oQb+fUGEKrP6xecQ==}
     engines: {node: '>=18'}
 
   '@inquirer/confirm@3.1.15':
@@ -1025,16 +1025,16 @@ packages:
     resolution: {integrity: sha512-/JmiTtIcSYbZdPucEW5q2rhC71vGKPivm3LFqNDQEI6lJyffq7hlfKKFC+R1Qp19dMqkaG+O5L1XmcHpmlAUUQ==}
     engines: {node: '>=18'}
 
-  '@inquirer/prompts@5.1.3':
-    resolution: {integrity: sha512-CguIOxmb5RevOGgkPToKcfaogx2IfgLmIFDmAjqWwvh5DfRWYl5qp1wAMo4SyH0BGQRuxbchkYJr0x1BgB7AVg==}
+  '@inquirer/prompts@5.2.0':
+    resolution: {integrity: sha512-7jBWrlkvprEHEFw29zG/piw/M76c5/zYQWfi8ybHeyzcTuXkh1NjDQxLg2PiruvsIt36z1zvKM5yn7vbF0Yr/A==}
     engines: {node: '>=18'}
 
   '@inquirer/rawlist@2.1.15':
     resolution: {integrity: sha512-zwU6aWDMyuQNiY5Z0iYXkxi7pliRFXqUmiS7vG6lAGxqcbOSptYgIxGJnd3AU4Y91N0Tbt57+koJL0S2p6vSkA==}
     engines: {node: '>=18'}
 
-  '@inquirer/select@2.3.11':
-    resolution: {integrity: sha512-DebGErUSCyzwIP2zx3hs1X4TAzxSl/yNHzuYGE6KFkHq3ubg+5dJZacFxN1C1eBkJvQ0XBWGpY6MTzHsJbxkpw==}
+  '@inquirer/select@2.4.0':
+    resolution: {integrity: sha512-iU1eRkHirVNs43zWk6anMIMKc7tCXlJ+I5DcpIV7JzMe+45TuPPOGGCgeGIkZ4xYJ3cXdFoh7GJpm84PNC8veg==}
     engines: {node: '>=18'}
 
   '@inquirer/type@1.5.0':
@@ -2095,8 +2095,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.4.829:
-    resolution: {integrity: sha512-5qp1N2POAfW0u1qGAxXEtz6P7bO1m6gpZr5hdf5ve6lxpLM7MpiM4jIPz7xcrNlClQMafbyUDDWjlIQZ1Mw0Rw==}
+  electron-to-chromium@1.4.830:
+    resolution: {integrity: sha512-TrPKKH20HeN0J1LHzsYLs2qwXrp8TF4nHdu4sq61ozGbzMpWhI7iIOPYPPkxeq1azMT9PZ8enPFcftbs/Npcjg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2819,8 +2819,8 @@ packages:
   ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
-  inquirer@10.0.2:
-    resolution: {integrity: sha512-G5n+WbW7oSF22wjTlQe69cRD8aokNMCtNreX8nVQ1XW1+UMGkaUYISYG0Se4UH2URWupOKAP+xM1CS+QvXqO2g==}
+  inquirer@10.0.3:
+    resolution: {integrity: sha512-/PxdZLy7YgrD5GFIBqUDy08jt73YVRzXrRJqv0Kfe4jJ2tPBhbr16r7OKkHEJ/Bd/0GgOLYSeqtQS/01YS5Pow==}
     engines: {node: '>=18'}
 
   internal-slot@1.0.7:
@@ -2856,8 +2856,8 @@ packages:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
 
-  is-core-module@2.14.0:
-    resolution: {integrity: sha512-a5dFJih5ZLYlRtDc0dZWP7RiKr6xIKzmn/oAYCDvdLThadVgyJwlaoQPmRtMSpz+rk0OGAgIu+TcM9HUF0fk1A==}
+  is-core-module@2.15.0:
+    resolution: {integrity: sha512-Dd+Lb2/zvk9SKy1TGCt1wFJFo/MWBPMX5x7KcvLajWTGuomczdQX61PvY5yK6SVACwpoexWo81IfFyoKY2QnTA==}
     engines: {node: '>= 0.4'}
 
   is-data-view@1.0.1:
@@ -2967,8 +2967,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jake@10.9.1:
-    resolution: {integrity: sha512-61btcOHNnLnsOdtLgA5efqQWjnSi/vow5HbI7HMdKKWqvrKR1bLK3BPlJn9gcSaP2ewuamUSMB5XEy76KUIS2w==}
+  jake@10.9.2:
+    resolution: {integrity: sha512-2P4SQ0HrLQ+fw6llpLnOaGAvN2Zu6778SJMrCUwns4fOoG9ayrTiZk3VV8sCPkVZF8ab0zksVpS8FDY5pRCNBA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -5786,7 +5786,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@inquirer/checkbox@2.3.11':
+  '@inquirer/checkbox@2.4.0':
     dependencies:
       '@inquirer/core': 9.0.3
       '@inquirer/figures': 1.0.4
@@ -5845,9 +5845,9 @@ snapshots:
       '@inquirer/type': 1.5.0
       ansi-escapes: 4.3.2
 
-  '@inquirer/prompts@5.1.3':
+  '@inquirer/prompts@5.2.0':
     dependencies:
-      '@inquirer/checkbox': 2.3.11
+      '@inquirer/checkbox': 2.4.0
       '@inquirer/confirm': 3.1.15
       '@inquirer/editor': 2.1.15
       '@inquirer/expand': 2.1.15
@@ -5855,7 +5855,7 @@ snapshots:
       '@inquirer/number': 1.0.3
       '@inquirer/password': 2.1.15
       '@inquirer/rawlist': 2.1.15
-      '@inquirer/select': 2.3.11
+      '@inquirer/select': 2.4.0
 
   '@inquirer/rawlist@2.1.15':
     dependencies:
@@ -5863,7 +5863,7 @@ snapshots:
       '@inquirer/type': 1.5.0
       yoctocolors-cjs: 2.1.2
 
-  '@inquirer/select@2.3.11':
+  '@inquirer/select@2.4.0':
     dependencies:
       '@inquirer/core': 9.0.3
       '@inquirer/figures': 1.0.4
@@ -6701,7 +6701,7 @@ snapshots:
   browserslist@4.23.2:
     dependencies:
       caniuse-lite: 1.0.30001642
-      electron-to-chromium: 1.4.829
+      electron-to-chromium: 1.4.830
       node-releases: 2.0.17
       update-browserslist-db: 1.1.0(browserslist@4.23.2)
 
@@ -7122,9 +7122,9 @@ snapshots:
 
   ejs@3.1.10:
     dependencies:
-      jake: 10.9.1
+      jake: 10.9.2
 
-  electron-to-chromium@1.4.829: {}
+  electron-to-chromium@1.4.830: {}
 
   emoji-regex@8.0.0: {}
 
@@ -7367,7 +7367,7 @@ snapshots:
   eslint-import-resolver-node@0.3.9:
     dependencies:
       debug: 3.2.7
-      is-core-module: 2.14.0
+      is-core-module: 2.15.0
       resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
@@ -7394,7 +7394,7 @@ snapshots:
       eslint-import-resolver-node: 0.3.9
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.16.1(eslint@8.57.0)(typescript@5.5.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.2
-      is-core-module: 2.14.0
+      is-core-module: 2.15.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.fromentries: 2.0.8
@@ -7949,9 +7949,9 @@ snapshots:
 
   ini@1.3.8: {}
 
-  inquirer@10.0.2:
+  inquirer@10.0.3:
     dependencies:
-      '@inquirer/prompts': 5.1.3
+      '@inquirer/prompts': 5.2.0
       '@inquirer/type': 1.5.0
       '@types/mute-stream': 0.0.4
       ansi-escapes: 4.3.2
@@ -7993,7 +7993,7 @@ snapshots:
 
   is-callable@1.2.7: {}
 
-  is-core-module@2.14.0:
+  is-core-module@2.15.0:
     dependencies:
       hasown: 2.0.2
 
@@ -8078,7 +8078,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jake@10.9.1:
+  jake@10.9.2:
     dependencies:
       async: 3.2.5
       chalk: 4.1.2
@@ -8934,7 +8934,7 @@ snapshots:
 
   resolve@1.22.8:
     dependencies:
-      is-core-module: 2.14.0
+      is-core-module: 2.15.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
