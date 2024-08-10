@@ -21,7 +21,7 @@
   "license": "ISC",
   "repository": "https://github.com/henderea/webpack-template",
   "devDependencies": {
-    "@henderea/static-site-builder": "^1.10.68",
+    "@henderea/static-site-builder": "^1.10.69",
     "@types/jquery": "^3.5.30",
     "@types/lodash": "^4.17.7",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
@@ -35,10 +35,10 @@
     "eslint-config-henderea": "^1.1.51",
     "eslint-plugin-import": "^2.29.1",
     "file-loader": "^6.2.0",
-    "inquirer": "^10.1.6",
+    "inquirer": "^10.1.8",
     "md5": "^2.3.0",
     "postcss-loader": "^8.1.1",
-    "postcss-preset-env": "^9.6.0",
+    "postcss-preset-env": "^10.0.0",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
     "serve": "^14.2.3",
@@ -46,11 +46,11 @@
     "thread-loader": "^4.0.2",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.4",
-    "vercel": "^35.2.3"
+    "vercel": "^35.2.4"
   },
   "dependencies": {
     "jquery": "^3.7.1",
-    "jquery-ui": "^1.13.3",
+    "jquery-ui": "^1.14.0",
     "lodash": "^4.17.21"
   },
   "htmlMeta": {
