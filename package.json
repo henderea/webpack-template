@@ -65,8 +65,5 @@
     "image": null,
     "themeColor": "#000000"
   },
-  "homepage": "/",
-  "eslintConfig": {
-    "extends": "henderea"
-  }
+  "homepage": "/"
 }
