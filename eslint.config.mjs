@@ -3,6 +3,6 @@ import henderea from 'eslint-config-henderea';
 export default [
   ...henderea,
   {
-    ignores: ['build', 'dist', 'public']
+    ignores: ['.vscode', '.vercel', '.idea', 'build', 'dist', 'public']
   }
 ];
