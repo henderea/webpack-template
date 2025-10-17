@@ -25,7 +25,7 @@
     "@stylistic/eslint-plugin": "^5.4.0",
     "@types/jquery": "^3.5.33",
     "@types/lodash": "^4.17.20",
-    "@types/node": "^24.7.2",
+    "@types/node": "^24.8.1",
     "@typescript-eslint/eslint-plugin": "^8.46.1",
     "@typescript-eslint/parser": "^8.46.1",
     "browser-sync": "^3.0.4",
@@ -50,7 +50,7 @@
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.1",
-    "vercel": "^48.2.9"
+    "vercel": "^48.4.0"
   },
   "dependencies": {
     "jquery": "^3.7.1",
