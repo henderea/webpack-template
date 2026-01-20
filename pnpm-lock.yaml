@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       jquery:
-        specifier: ^3.7.1
-        version: 3.7.1
+        specifier: ^4.0.0
+        version: 4.0.0
       jquery-ui:
         specifier: ^1.14.1
         version: 1.14.1
@@ -3438,8 +3438,8 @@ packages:
   jquery-ui@1.14.1:
     resolution: {integrity: sha512-DhzsYH8VeIvOaxwi+B/2BCsFFT5EGjShdzOcm5DssWjtcpGWIMsn66rJciDA6jBruzNiLf1q0KvwMoX1uGNvnQ==}
 
-  jquery@3.7.1:
-    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+  jquery@4.0.0:
+    resolution: {integrity: sha512-TXCHVR3Lb6TZdtw1l3RTLf8RBWVGexdxL6AC8/e0xZKEpBflBsjh9/8LXw+dkNFuOyW9B7iB3O1sP7hS0Kiacg==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -9209,9 +9209,9 @@ snapshots:
 
   jquery-ui@1.14.1:
     dependencies:
-      jquery: 3.7.1
+      jquery: 4.0.0
 
-  jquery@3.7.1: {}
+  jquery@4.0.0: {}
 
   js-tokens@4.0.0: {}
 
