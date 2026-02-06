@@ -44,7 +44,7 @@
     "vercel": "^50.12.3"
   },
   "dependencies": {
-    "jquery": "^4.0.0",
+    "jquery": "^3.7.1",
     "jquery-ui": "^1.14.2",
     "lodash": "^4.17.23"
   },
