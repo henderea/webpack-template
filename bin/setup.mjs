@@ -123,10 +123,10 @@ const questions = [
 ];
 
 prompt(questions).then(async (answers) => {
-  let packageJsonSrc = fs.readFileSync(path.join(dirname, '../package.json'), 'utf8');
-  let manifestJsonSrc = fs.readFileSync(path.join(dirname, '../public/manifest.json'), 'utf8');
-  let packageJson = JSON.parse(packageJsonSrc);
-  let manifestJson = JSON.parse(manifestJsonSrc);
+  const packageJsonSrc = fs.readFileSync(path.join(dirname, '../package.json'), 'utf8');
+  const manifestJsonSrc = fs.readFileSync(path.join(dirname, '../public/manifest.json'), 'utf8');
+  const packageJson = JSON.parse(packageJsonSrc);
+  const manifestJson = JSON.parse(manifestJsonSrc);
   packageJson.name = answers.baseName;
   packageJson.description = answers.desc;
   if(answers.addDeploy) {
@@ -142,8 +142,8 @@ prompt(questions).then(async (answers) => {
   manifestJson.theme_color = answers.siteThemeColor || '#000';
   manifestJson.background_color = answers.siteBackgroundColor || '#fff';
   manifestJson.display = answers.siteDisplay || 'minimal-ui';
-  let packageJsonDest = JSON.stringify(packageJson, null, 2);
-  let manifestJsonDest = JSON.stringify(manifestJson, null, 2);
+  const packageJsonDest = JSON.stringify(packageJson, null, 2);
+  const manifestJsonDest = JSON.stringify(manifestJson, null, 2);
   showDiff(packageJsonSrc, packageJsonDest, 'package.json');
   if(await confirmSave()) {
     fs.writeFileSync(path.join(dirname, '../package.json'), packageJsonDest);
@@ -153,7 +153,7 @@ prompt(questions).then(async (answers) => {
     fs.writeFileSync(path.join(dirname, '../public/manifest.json'), manifestJsonDest);
   }
 
-  let useTs = await askConfirm('Use TypeScript?');
+  const useTs = await askConfirm('Use TypeScript?');
   if(useTs) {
     console.log(chalk.bold.blue('Switching to TypeScript'));
     fs.unlinkSync(path.join(dirname, '../src/index.js'));
