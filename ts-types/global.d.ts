@@ -21,3 +21,7 @@ interface JQueryStatic {
 }
 
 type JQueryable<TElement = HTMLElement> = JQuery<TElement> | JQuery.Selector | TElement;
+
+declare module '*.scss' {}
+
+declare module '*.css' {}
